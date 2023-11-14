@@ -58,7 +58,7 @@ const App = () => {
       {tasks.map((task, index) => (
             <li key={index} className="task">
               {task.name}
-              <button className="btn btn--red" onClick={() => removeTask(task.id)}>Remove</button>
+              <button className="btn btn--red" onClick={() => removeTask(task.id, true)}>Remove</button>
             </li>
           ))}
       </ul>
